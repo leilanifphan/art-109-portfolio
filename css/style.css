@@ -1,0 +1,211 @@
+/* CSS Reset and Base Styles */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+}
+
+/* Navigation */
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 2.2rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.site-nav .brand {
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #111;
+}
+
+.site-nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.site-nav .nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+.site-nav .nav-links a[aria-current="page"] {
+    position: relative;
+}
+
+.site-nav .nav-links a[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #111;
+}
+
+.site-nav .social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-nav .icon-link {
+    color: #111;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem; 
+}
+
+.site-nav .icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.site-nav .icon-link.email .icon {
+    width: 28px;
+    height: 28px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    opacity: 0.8;
+}
+
+header {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner .banner-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.15);
+}
+
+.banner .bio {
+    position: relative;
+    z-index: 1;
+    max-width: 80ch;
+    padding: 2rem;
+    color: #111;
+}
+
+.banner .bio h1 {
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.banner .bio h3 {
+    font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-section > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-section a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projects-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.projects-section a:hover img,
+.projects-section a:focus img {
+    transform: scale(1.05);
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+}
+
+.projects-section p {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #666;
+}
+
+/* Responsive: 2 columns on tablets */
+@media (max-width: 768px) {
+    .projects-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Responsive: 1 column on mobile */
+@media (max-width: 480px) {
+    .projects-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
