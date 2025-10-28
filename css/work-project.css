@@ -505,10 +505,15 @@ p {
     gap: 1.2rem;
 }
 
-.site-footer .footer-brand {
+.site-footer .footer-brand,
+.site-footer .footer-brand:link,
+.site-footer .footer-brand:visited,
+.site-footer .footer-brand:hover,
+.site-footer .footer-brand:active {
     font-family: "Young Serif", serif;
     font-weight: 400;
     color: #8e51f8;
+    text-decoration: none;
 }
 
 .site-footer .footer-social {
