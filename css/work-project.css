@@ -505,15 +505,19 @@ p {
     gap: 1.2rem;
 }
 
-.site-footer .footer-brand,
-.site-footer .footer-brand:link,
-.site-footer .footer-brand:visited,
-.site-footer .footer-brand:hover,
-.site-footer .footer-brand:active {
+.site-footer a.footer-brand {
     font-family: "Young Serif", serif;
     font-weight: 400;
     color: #8e51f8;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.site-footer a.footer-brand:link,
+.site-footer a.footer-brand:visited,
+.site-footer a.footer-brand:hover,
+.site-footer a.footer-brand:active {
+    text-decoration: none !important;
+    color: #8e51f8;
 }
 
 .site-footer .footer-social {
