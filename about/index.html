@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Leilani Phan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="../index.html">Leilani Phan</a>
+            <button class="hamburger" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Work</a></li>
+                <li><a href="../play/index.html">Play</a></li>
+                <li><a href="#about" aria-current="page">About</a></li>
+                <li>
+                    <a class="external-shop" href="https://lylanite.com" target="_blank" rel="noopener">
+                        Shop <img class="external-icon" src="../imgs/up-right-arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    <img class="icon" src="../imgs/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="icon-link email" href="mailto:hello@example.com">
+                    <img class="icon" src="../imgs/mail-icon.svg" alt="Email">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-page">
+        <h1 class="about-title"><span style="color: #8e51f8;">About Me</span></h1>
+        
+        <div class="about-content">
+            <img class="about-headshot" src="../imgs/headshot.png" alt="Photo of Leilani Phan">
+            <div class="about-text">
+                <h2><span style="color: #8e51f8;">Nice to meet you!</span></h2>
+                <p>Hi, I'm Leilani Phan, a Bay Area creative who loves expressing their love for art in different ways. I'm
+                    currently working on my stationery brand called <span style="color: #8e51f8;">LylaNite</span>, which is the current project I'm working on. As a
+                    current San Jose State University student, I recently worked on a game project called <span style="color: #8e51f8;">Spud Showdown</span> during the 2025
+                    Semester Game Jam, which won Best Replayability and Most Creative Concept Awards. My hobbies when I'm not working are <span style="color: #8e51f8;">journaling, designing stickers, and gaming</span>!</p>
+            </div>
+        </div>
+
+        <section class="about-resume" aria-labelledby="resume-heading">
+            <h2 id="resume-heading">Resume</h2>
+            <img class="resume-image" src="../imgs/leilani-phan-resume-website.png" alt="Resume for Leilani Phan">
+            <div class="resume-cta">
+                <a class="btn resume-btn" href="../imgs/leilani-phan-resume-website.pdf" target="_blank" rel="noopener">
+                    View Resume
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">Leilani Phan</div>
+            <div class="footer-social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img class="icon" src="../imgs/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="icon-link" href="mailto:hello@example.com" aria-label="Email">
+                    <img class="icon" src="../imgs/mail-icon.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger');
+            var navLinks = document.querySelector('.nav-links');
+            var social = document.querySelector('.social');
+            
+            if (hamburger && navLinks && social) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = navLinks.classList.toggle('open');
+                    social.classList.toggle('open');
+                    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

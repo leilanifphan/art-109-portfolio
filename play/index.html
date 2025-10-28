@@ -1,51 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play | Leilani Phan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="site-nav" aria-label="Primary">
-            <a class="brand" href="index.html">Leilani Phan</a>
+            <a class="brand" href="../index.html">Leilani Phan</a>
+            <button class="hamburger" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="../index.html" aria-current="page">Work</a></li>
-                <li><a href="#play">Play</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="../index.html">Work</a></li>
+                <li><a href="#play" aria-current="page">Play</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li>
+                    <a class="external-shop" href="https://lylanite.com" target="_blank" rel="noopener">
+                        Shop <img class="external-icon" src="../imgs/up-right-arrow.svg" alt="">
+                    </a>
+                </li>
             </ul>
             <div class="social">
                 <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                    <img class="icon" src="imgs/linkedin-icon.png" alt="LinkedIn">
+                    <img class="icon" src="../imgs/linkedin-icon.svg" alt="LinkedIn">
                 </a>
                 <a class="icon-link email" href="mailto:hello@example.com">
-                    <img class="icon" src="imgs/mail-icon.png" alt="Email">
+                    <img class="icon" src="../imgs/mail-icon.svg" alt="Email">
                 </a>
             </div>
         </nav>
     </header>
 
     <section class="play-title">
-        <h1>A space to play, explore, and create.</h1>
+        <h1><span style="color: #8e51f8;">A space to play, explore, and create.</span></h1>
         <p>Where experiments, side projects, and happy accidents live.</p>
     </section>
 
     <main class="play-section">
         <div class="play-item">
-            <a href="https://www.instagram.com/lylanite.studio/" target="_blank" rel="noopener">
-                <img src="../imgs/lylanite-logo.png" alt="LylaNite Studio Logo">
-                <h2>LylaNite Studio</h2>
-                <p>My personal brand for stickers, stationery, and more!</p>
+            <a href="play/monday-mailer.html">
+                <img src="../imgs/monday-mailer-mockup.png" alt="Monday Mailer Design">
+                <h2>Monday Mailer</h2>
+                <p>Email Newsletter Banner Design</p>
             </a>
         </div>
         <div class="play-item">
-            <a href="work/sound-cloud.html">
-                <img src="../imgs/sound-cloud-mockup.png" alt="Sound Cloud App Redesign">
-                <h2>Sound Cloud Redesign</h2>
-                <p>App Redesign Concept</p>
+            <a href="play/smiski-series-bundle.html">
+                <img src="../imgs/smiski-series-bundle-thumbnail.jpg" alt="Smiski Series Bundle">
+                <h2>Smiski Series Sticker Sheets</h2>
+                <p>Sticker Design</p>
             </a>
         </div>
+
+        <div class="play-item">
+            <a href="play/zine-spread.html">
+                <img src="../imgs/zine-spread-mockup.png" alt="Zine Spread">
+                <h2>What Ur Hoodie Says About You</h2>
+                <p>Zine Design</p>
+            </a>
+        </div>
+        <div class="play-item">
+            <a href="play/design-with-intention.html">
+                <img src="../imgs/design-with-intention-mockup.png" alt="Design With Intention">
+                <h2>Design With Intention</h2>
+                <p>Zine Design</p>
+            </a>
+        </div>
+
+        <div class="play-item">
+            <a href="play/informational-poster.html">
+                <img src="../imgs/informational-poster-mockup.png" alt="Informational Poster">
+                <h2>Informational Poster</h2>
+                <p>Poster Design</p>
+            </a>
+        </div>
+
+        <div class="play-item">
+            <a href="play/smiski-calendar.html">
+                <img src="../imgs/smiski-calendar-mockup.png" alt="Smiski Calendar">
+                <h2>Smiski Calendar</h2>
+                <p>Calendar Poster Design</p>
+            </a>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">Leilani Phan</div>
+            <div class="footer-social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img class="icon" src="../imgs/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="icon-link" href="mailto:hello@example.com" aria-label="Email">
+                    <img class="icon" src="../imgs/mail-icon.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger');
+            var navLinks = document.querySelector('.nav-links');
+            var social = document.querySelector('.social');
+            
+            if (hamburger && navLinks && social) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = navLinks.classList.toggle('open');
+                    social.classList.toggle('open');
+                    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>

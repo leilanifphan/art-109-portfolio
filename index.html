@@ -9,6 +9,7 @@
         content="Leilani Phan is a graphic designer at San Jose State University, minoring in Interaction Design.">
     <meta name="keywords"
         content="Leilani Phan, graphic designer, interaction design, San Jose State University, SJSU, design portfolio">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,27 +17,36 @@
     <header>
         <nav class="site-nav" aria-label="Primary">
             <a class="brand" href="index.html">Leilani Phan</a>
+            <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html" aria-current="page">Work</a></li>
                 <li><a href="play/index.html">Play</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li>
+                    <a class="external-shop" href="https://lylanite.com" target="_blank" rel="noopener">
+                        Shop <img class="external-icon" src="imgs/up-right-arrow.svg" alt="">
+                    </a>
+                </li>
             </ul>
             <div class="social">
                 <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                    <img class="icon" src="imgs/linkedin-icon.png" alt="LinkedIn">
+                    <img class="icon" src="imgs/linkedin-icon.svg" alt="LinkedIn">
                 </a>
                 <a class="icon-link email" href="mailto:hello@example.com">
-                    <img class="icon" src="imgs/mail-icon.png" alt="Email">
+                    <img class="icon" src="imgs/mail-icon.svg" alt="Email">
                 </a>
             </div>
         </nav>
         <div class="banner" role="img" aria-label="Colorful gradient background">
             <img class="banner-bg" src="imgs/Gradient.png" alt="" aria-hidden="true">
             <section class="bio">
-                <h1>Hi,I'm Leilani Phan.</h1>
-                <p>I’m a Graphic Designer who loves bringing fun and purpose to every project. When I'm not designing,
-                    you’ll find me working on LylaNite, my stationary and sticker brand.</p>
+                <h1><span style="color: #8e51f8;">Hi, I'm Leilani Phan.</span></h1>
+                <p>I'm a <span style="color: #8e51f8;">Graphic Designer</span> who loves bringing fun and purpose to every project. When I'm not designing,
+                    you'll find me working on <a href="https://lylanite.com" target="_blank" rel="noopener" style="color: #8e51f8; text-decoration: underline;">LylaNite</a>, my stationery brand.</p>
             </section>
         </div>
     </header>
@@ -44,49 +54,63 @@
 
         <section class="projects-section">
             <div class="crying-in-hmart">
-                <a href="work/crying-in-hmart.html">
+                <a href="work/crying-in-hmart">
                     <img src="imgs/crying-in-hmart-mockup.png" alt="Crying in H Mart Book Cover ReDesign">
                     <h2>Crying in H Mart</h2>
                     <p>Book Cover Redesign</p>
                 </a>
             </div>
             <div class="symphony-orchestra">
-                <a href="work/symphony-orchestra.html">
+                <a href="work/symphony-orchestra">
                     <img src="imgs/symphony-orchestra-mockup.png" alt="SJSU Symphony Orchestra Poster">
                     <h2>Symphony Orchestra</h2>
                     <p>SJSU School of Music • Poster Design</p>
                 </a>
             </div>
             <div class="wolf-play">
-                <a href="work/wolf-play.html">
+                <a href="work/wolf-play">
                     <img src="imgs/wolf-play-mockup.png" alt="SJSU Wolf Play Poster for SJSU Hal Todd Theatre">
-                    <h2>SJSU Wolf Play</h2>
+                    <h2>Wolf Play</h2>
                     <p>SJSU Film, Theatre, and Dance • Poster Design</p>
                 </a>
             </div>
             <div class="water-wood-metal-skin">
-                <a href="work/water-wood-metal-skin.html">
+                <a href="work/water-wood-metal-skin">
                     <img src="imgs/water-wood-metal-skin-mockup.png" alt="Water Wood Metal Skin Poster">
                     <h2>Water Wood Metal Skin</h2>
-                    <p>SJSU School of Music • Poster Design</p>
+                    <p>SJSU School of Music • Poster Redesign</p>
                 </a>
             </div>
             <div class="fall-choral-concert">
-                <a href="work/fall-choral-concert.html">
+                <a href="work/fall-choral-concert">
                     <img src="imgs/fall-choral-concert-mockup.png" alt="Fall Choral Concert Poster">
                     <h2>Fall Choral Concert</h2>
                     <p>SJSU School of Music • Poster Design</p>
                 </a>
             </div>
             <div class="cat-outta-here">
-                <a href="work/cat-outta-here.html">
+                <a href="work/cat-outta-here">
                     <img src="imgs/cat-outta-here-logo.png" alt="Cat Outta Here Poster">
                     <h2>Cat Outta Here</h2>
-                    <p>Logo Design</p>
+                    <p>Logo and Game Design</p>
                 </a>
             </div>
         </section>
     </main>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">Leilani Phan</div>
+            <div class="footer-social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img class="icon" src="imgs/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="icon-link" href="mailto:hello@example.com" aria-label="Email">
+                    <img class="icon" src="imgs/mail-icon.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

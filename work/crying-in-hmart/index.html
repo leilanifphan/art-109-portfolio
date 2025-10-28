@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilani Phan | Crying in H Mart Book Redesign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/work-project.css">
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="../../index.html">Leilani Phan</a>
+            <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html" aria-current="page">Work</a></li>
+                <li><a href="../../play/index.html">Play</a></li>
+                <li><a href="../../about/index.html">About</a></li>
+                <li>
+                    <a class="external-shop" href="https://lylanite.com" target="_blank" rel="noopener">
+                        Shop <img class="external-icon" src="../../imgs/up-right-arrow.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    <img class="icon" src="../../imgs/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="icon-link email" href="mailto:hello@example.com">
+                    <img class="icon" src="../../imgs/mail-icon.svg" alt="Email">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="work-title">
+        <h1><span style="color: #8e51f8;">Crying in H Mart</span><br><span style="font-family: 'Instrument Sans', sans-serif; font-size: 70%; font-weight: 600; color: #8e51f872;">Book Cover
+                Redesign<br></span></span>
+        </h1>
+
+        <p>I chose to redesign the book cover of "Crying in HMart" by Michelle Zauner. In "Crying in HMart", Michelle
+            Zauner
+            discusses her relationship with food before her mother's passing. Michelle poses a struggles with her
+            relationship with food as I highlighted on the front cover with some common Korean dishes.</p>
+        <img src="../../imgs/crying-in-hmart-mockup.png" alt="Crying in H Mart Book Cover Redesign">
+    </section>
+    <section class="work-process">
+        <p>I wanted to keep the design and colors recognizable to the original book cover. I kept the red and black
+            cover theme, but I wanted to go beyond representing the food Michelle Zauner mentioned rather than noodles
+            as the front cover. Michelle Zauner mentioned before her mother passed her love for food, so I wanted to
+            represent a family meal.</p>
+        <img src="../../imgs/crying-in-hmart.png" alt="Crying in H Mart Book Cover Redesign Sketch">
+        <img src="../../imgs/crying-in-hmart-sketch.jpeg" alt="Crying in H Mart Book Cover Redesign Sketch">
+    </section>
+
+    <section class="work-final">
+        <h2>Final Design</h2>
+        <img src="../../imgs/crying-in-hmart-front.png" alt="Crying in H Mart Book Cover Redesign Front">
+        <img src="../../imgs/crying-in-hmart-spine.png" alt="Crying in H Mart Book Cover Redesign Spine">
+        <img src="../../imgs/crying-in-hmart-back.png" alt="Crying in H Mart Book Cover Redesign Back">
+    </section>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">Leilani Phan</div>
+            <div class="footer-social">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img class="icon" src="../../imgs/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a class="icon-link" href="mailto:hello@example.com" aria-label="Email">
+                    <img class="icon" src="../../imgs/mail-icon.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger');
+            var navLinks = document.querySelector('.nav-links');
+            var social = document.querySelector('.social');
+            
+            if (hamburger && navLinks && social) {
+                hamburger.addEventListener('click', function() {
+                    var isOpen = navLinks.classList.toggle('open');
+                    social.classList.toggle('open');
+                    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
