@@ -105,11 +105,11 @@ p {
     width: 100%;
 }
 
-/* External Shop link with arrow icon */
+/* External Shop link*/
 .site-nav .nav-links .external-shop {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem; /* add a touch more space between text and icon */
+    gap: 0.5rem;
 }
 
 .site-nav .nav-links .external-icon {
@@ -246,7 +246,7 @@ header {
     color: #666;
 }
 
-/* Responsive: 2 columns on tablets */
+/* Tablet */
 @media (max-width: 768px) {
     .banner {
         height: 400px;
@@ -258,7 +258,7 @@ header {
     }
 }
 
-/* Responsive: 1 column on mobile */
+/* Mobile*/
 @media (max-width: 480px) {
     .banner {
         height: 300px;
@@ -270,7 +270,7 @@ header {
     }
 }
 
-/* Play Page - Title Banner */
+/* Play Page */
 .play-title {
     text-align: center;
     padding: 8rem 2rem;
@@ -341,7 +341,7 @@ header {
     color: #666;
 }
 
-/* Responsive: 2 columns on tablets */
+/* Tablet */
 @media (max-width: 768px) {
     .play-section {
         grid-template-columns: repeat(2, 1fr);
@@ -353,7 +353,7 @@ header {
     }
 }
 
-/* Responsive: 1 column on mobile */
+/* Mobile */
 @media (max-width: 480px) {
     .play-section {
         grid-template-columns: 1fr;
@@ -412,7 +412,7 @@ header {
     color: #444;
 }
 
-/* Responsive: Stack on tablets and mobile */
+/* Mobile */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -430,7 +430,7 @@ header {
     }
 }
 
-/* About Resume embed */
+/* About Resume */
 .about-resume {
     max-width: 900px;
     margin: 6rem auto 0;
@@ -453,10 +453,10 @@ header {
 }
 
 @media (max-width: 768px) {
-    /* no special handling needed for image height; it scales naturally */
+   
 }
 
-/* Resume CTA button */
+/* Resume button */
 .resume-cta {
     margin-top: 2.5rem;
     text-align: center;
@@ -468,8 +468,8 @@ header {
     color: #fff;
     text-decoration: none;
     padding: 0.9rem 1.8rem;
-    border-radius: 9999px; /* pill shape */
-    border: 2px solid transparent; /* avoid layout shift on hover */
+    border-radius: 9999px;
+    border: 2px solid transparent;
     font-weight: 600;
     letter-spacing: 0.2px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -478,7 +478,7 @@ header {
 
 .btn.resume-btn:hover,
 .btn.resume-btn:focus {
-    background: #e8e7ff; /* requested hover color */
+    background: #e8e7ff; 
     color: #8e51f8;
     transform: translateY(-1px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.12);
@@ -489,7 +489,7 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* Hamburger button - hidden on desktop */
+/* Hamburger button*/
 .site-nav .hamburger {
   display: none;
 }
@@ -535,7 +535,7 @@ header {
     transition: 0.3s;
   }
   
-  /* Transform nav-links into dropdown */
+  /* Nav-links into dropdown */
   .site-nav .nav-links {
     position: absolute;
     top: 100%;
@@ -617,7 +617,7 @@ header {
   }
 }
 
-/* Footer (matches nav gradient) */
+/* Footer */
 .site-footer {
     border-top: 1px solid #eaeaea;
     background: linear-gradient(135deg, #f5f7fa 0%, #e8e7ff 100%);

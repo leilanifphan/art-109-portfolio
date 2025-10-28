@@ -40,7 +40,7 @@ p {
     font-style: normal;
 }
 
-/* Navigation (copied from main style.css for standalone project pages) */
+/* Navigation */
 .site-nav {
     position: relative;
     display: flex;
@@ -96,7 +96,7 @@ p {
     width: 100%;
 }
 
-/* External Shop link with arrow icon */
+/* External Shop link*/
 .site-nav .nav-links .external-shop {
     display: inline-flex;
     align-items: center;
@@ -143,14 +143,14 @@ p {
     opacity: 0.8;
 }
 
-/* Work title layout: h1+h2 stacked on left, paragraph on right, image centered below */
+/* Work title layout */
 .work-title {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 6rem 2rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* reduce ratio for less space */
-    row-gap: 0; /* no row gap, spacing handled by margin */
+    grid-template-columns: 1fr 1fr; 
+    row-gap: 0; 
     column-gap: 0;
     align-items: start;
 }
@@ -160,11 +160,11 @@ p {
     grid-row: 1;
     font-size: clamp(3rem, 5vw, 4.2rem);
     line-height: 1.2;
-    margin: 0 0 20px 0; /* 20px bottom margin to h2 */
+    margin: 0 0 20px 0; 
     color: #111;
 }
 
-/* Tighten stacked meta lines inside H1 (e.g., Designer / Programmers) */
+/* Tighten Line (Designer / Programmers) */
 .work-title h1 .credits {
     margin-top: 10px;
     line-height: 1.5;
@@ -191,12 +191,12 @@ p {
 }
 
 .work-title img {
-    grid-column: 1 / -1; /* span both columns */
+    grid-column: 1 / -1; 
     grid-row: 3;
     justify-self: center;
     margin-top: 6rem;
     width: 100%;
-    max-width: 650px; /* smaller max-width for image */
+    max-width: 650px; 
     height: auto;
     display: block;
     border-radius: 16px;
@@ -227,12 +227,12 @@ p {
     }
 }
 
-/* Work Process section: centered paragraph, two images side-by-side and centered */
+/* Work Process section */
 .work-process {
     max-width: 1200px;
     margin: 2rem auto 0;
     padding: 2rem 2rem 4rem;
-    text-align: center; /* centers inline content */
+    text-align: center; 
 }
 
 .work-process h2 {
@@ -247,18 +247,17 @@ p {
     font-size: 1.8rem;
     line-height: 1.7;
     color: #444;
-    max-width: 100ch; /* make paragraph wider */
-    margin: 0 auto 2rem; /* center paragraph and add bottom margin */
+    max-width: 100ch; 
+    margin: 0 auto 2rem; 
 }
 
 .work-process img {
     width: auto;
-    max-width: 260px; /* adjusted to fit 4 images in a row */
-    height: auto;
-    display: inline-block; /* allows images to sit inline with padding */
-    vertical-align: bottom; /* prevent baseline gap */
-    padding: 0 0.6rem; /* reduced horizontal padding for 4 images */
-    margin-bottom: 2rem; /* add space after images */
+    max-width: 260px; 
+    display: inline-block; 
+    vertical-align: bottom; 
+    padding: 0 0.6rem; 
+    margin-bottom: 2rem; 
     border-radius: 12px;
 }
 
@@ -266,22 +265,19 @@ p {
 @media (max-width: 768px) {
     .work-process img {
         display: block;
-        margin: 0 auto 1.6rem; /* center and stack images on small screens */
+        margin: 0 auto 1.6rem; 
         padding: 0;
     }
 }
 
-/* Specific styling for water-wood-metal-skin ticket */
 #water-wood-metal-skin-ticket {
     max-width: 600px !important;
 }
 
-/* Specific styling for cat-outta-here sketch */
 #cat-outta-here-sketch {
     max-width: 900px !important;
 }
 
-/* Specific styling for cat-outta-here sprites - smaller and in a row */
 #cat-sprites {
     display: flex;
     flex-wrap: wrap;
@@ -311,16 +307,16 @@ p {
     }
 }
 
-/* Work Final: three images side by side, centered as a group; heading aligned to left edge */
+/* Work Final */
 .work-final {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 2rem;
-    text-align: center; /* centers inline content */
+    text-align: center; 
 }
 
 .work-final h2 {
-    text-align: center; /* align heading to left */
+    text-align: center;
     font-size: clamp(2.2rem, 3.2vw, 3rem);
     margin: 0.5rem 0 1.5rem;
     color: #111;
@@ -336,13 +332,13 @@ p {
 }
 
 .work-final img {
-    height: 600px; /* increased height for bigger display */
-    width: auto; /* let width adjust based on aspect ratio */
-    display: inline-block; /* allows images to sit inline with padding */
-    object-fit: contain; /* scale images proportionally within fixed height */
-    vertical-align: bottom; /* prevent baseline gap */
-    padding: 0 0.5rem; /* add horizontal padding between images */
-    margin: 2rem 0; /* add vertical margin */
+    height: 600px; 
+    width: auto; 
+    display: inline-block; 
+    object-fit: contain; 
+    vertical-align: bottom; 
+    padding: 0 0.5rem; 
+    margin: 2rem 0; 
 }
 
 
@@ -365,7 +361,7 @@ p {
     }
 }
 
-/* Hamburger button - hidden on desktop */
+/* Hamburger button*/
 .site-nav .hamburger {
   display: none;
 }
@@ -493,7 +489,7 @@ p {
   }
 }
 
-/* Footer (matches nav gradient) */
+/* Footer */
 .site-footer {
     border-top: 1px solid #eaeaea;
     background: linear-gradient(135deg, #f5f7fa 0%, #e8e7ff 100%);
